@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
             user.setFollowed(!user.isFollowed());
             // Update the button text based on the new followed status
             if (user.isFollowed()) {
-                btnFollow.setText("Unfollow");
+                btnFollow.setText("UNFOLLOW");
                 Toast t = Toast.makeText(getApplicationContext(), "Followed", Toast.LENGTH_LONG);
                 t.show();
             } else {
-                btnFollow.setText("Follow");
+                btnFollow.setText("FOLLOW");
                 Toast t = Toast.makeText(getApplicationContext(), "Unfollowed", Toast.LENGTH_LONG);
                 t.show();
             }
