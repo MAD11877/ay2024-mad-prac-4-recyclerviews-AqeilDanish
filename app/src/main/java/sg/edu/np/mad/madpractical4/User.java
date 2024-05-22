@@ -1,25 +1,52 @@
 package sg.edu.np.mad.madpractical4;
 
 public class User {
-    // Attributes
-    public String name;
-    public String description;
-    public int id;
-    public boolean followed;
+    private String name;
+    private String description;
+    private int id;
+    private boolean followed;
 
-    // Constructor
-    public User(String name, String description, int id, boolean followed) {
-        this.name = name;
-        this.description = description;
-        this.id = id;
-        this.followed = followed;
+    public void setName(String n)
+    {
+        name = n;
+    }
+    public String getName()
+    {
+        return name;
     }
 
-    public boolean isFollowed(){
+    public void setDescription(String d)
+    {
+        description = d;
+    }
+    public String getDescription()
+    {
+        return description;
+    }
+
+    public void setId(int i)
+    {
+        id = i;
+    }
+    public int getId()
+    {
+        return id;
+    }
+
+    public void setFollowed(boolean f)
+    {
+        followed = f;
+    }
+    public boolean getFollowed()
+    {
         return followed;
     }
 
-    public void setFollowed(boolean followed){
-        this.followed = followed;
+    public User(String n, String d, int i, boolean f)
+    {
+        name = n;
+        description = d;
+        id = i;
+        followed = f;
     }
 }
